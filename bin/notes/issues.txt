@@ -1,0 +1,5 @@
+Create a javafx application from scratch without IDE
+Create maven and spring applications without IDE
+add custom images
+
+WHy a limit of 2k on request

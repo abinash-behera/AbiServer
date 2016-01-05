@@ -32,7 +32,7 @@ The above steps help in achieving concurrent availability.
 
 The server will be built in the following three stages:
 
-Part 1 – Server GUI - Using Java FX for building the GUI ----- Complete
+Part 1 - Server GUI - Using Java FX for building the GUI ----- Complete
 
 Part 2 - A simple server for static resources ---------------------- In-progress
 

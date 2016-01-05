@@ -11,8 +11,11 @@ Socket = ( IP address, Port number)
 
 So whenever the client or web user application communicates with the web server, it needs four important components also called as TCP Connection tuple. This tuple consists of:
 1. Client/Destination/remote IP address
+
 2. Client/destination/remote Port number
+
 3. Source/local IP address
+
 4. Source/local Port number
 
 Reference - http://serverfault.com/questions/296603/understanding-ports-how-do-multiple-browser-tabs-communicate-at-the-same-time
@@ -21,6 +24,7 @@ So in short –
 1) A web server listens on a single port but may serve several clients concurrently, by creating a child process for each client and establishing a TCP connection between the child process and the client.
 	TCP connection is basically a tuple
 A server may create several concurrently established TCP sockets with the same local port number and local IP address. They are treated as different sockets by the OS, since the remote socket address (the client IP address and/or port number) are different; i.e. they have different socket pair tuples.
+
 2) In that way, once the server accepts the incoming connection while LISTENing it opens a new socket dedicated to that conversation and hands the processing off to something else, then goes back to LISTENing.
 
 
